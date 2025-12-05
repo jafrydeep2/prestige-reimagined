@@ -8,10 +8,10 @@ const navItems = [
   { label: "ABOUT", href: "/" },
   { label: "RESIDENTIAL", href: "/residential" },
   { label: "COMMERCIAL", href: "/commercial" },
-  { label: "RENTALS", href: "#rentals" },
-  { label: "HOSPITALITY", href: "#hospitality" },
+  // { label: "RENTALS", href: "#rentals" },
+  // { label: "HOSPITALITY", href: "#hospitality" },
   { label: "RETAIL", href: "/retail" },
-  { label: "NRI", href: "#nri" },
+  // { label: "NRI", href: "#nri" },
 ];
 
 export const Header = () => {
@@ -29,8 +29,10 @@ export const Header = () => {
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="w-24 lg:w-32 h-16 lg:h-20 flex items-center justify-center bg-charcoal rounded-b-lg relative overflow-hidden">
-              <div className="text-center px-2">
+            <div 
+            className="w-24 lg:w-32 h-16 lg:h-32 flex items-center justify-center relative overflow-hidden"
+            >
+              {/* <div className="text-center px-2">
                 <div className="text-gold text-xs font-display italic">✦</div>
                 <div className="text-primary-foreground font-display text-lg lg:text-xl font-semibold leading-none">
                   Prestige
@@ -41,7 +43,8 @@ export const Header = () => {
                 <div className="text-primary-foreground/70 text-[6px] lg:text-[8px] italic">
                   Add Prestige to your life
                 </div>
-              </div>
+              </div> */}
+              <img src="https://d1t2fddy6amcvs.cloudfront.net/images/logo.svg" />
             </div>
           </Link>
 
@@ -73,8 +76,8 @@ export const Header = () => {
           </nav>
 
           {/* Actions */}
-          <div className="flex items-center gap-4">
-            <Button
+          <div className="flex items-center gap-4 md:hidden">
+            {/* <Button
               variant="outline"
               className="hidden lg:flex border-charcoal text-charcoal hover:bg-charcoal hover:text-primary-foreground transition-all duration-300"
             >
@@ -82,7 +85,7 @@ export const Header = () => {
             </Button>
             <button className="p-2 hover:bg-muted rounded-full transition-colors">
               <Search className="w-5 h-5 text-foreground" />
-            </button>
+            </button> */}
             <button
               className="lg:hidden p-2 hover:bg-muted rounded-full transition-colors"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -135,9 +138,9 @@ export const Header = () => {
                   </Link>
                 )
               )}
-              <Button className="mt-4 bg-charcoal text-primary-foreground hover:bg-charcoal-light">
+              {/* <Button className="mt-4 bg-charcoal text-primary-foreground hover:bg-charcoal-light">
                 UPCOMING PROJECTS
-              </Button>
+              </Button> */}
             </nav>
           </motion.div>
         )}

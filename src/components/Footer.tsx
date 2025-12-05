@@ -6,21 +6,22 @@ import {
   Linkedin,
   Youtube,
   ArrowUpRight,
+  MessageCircle,
 } from "lucide-react";
 
 const quickMenu = [
   { label: "About Us", href: "/" },
   { label: "Residential", href: "/residential" },
   { label: "Commercial", href: "/commercial" },
-  { label: "Retail", href: "/retail" },
-  { label: "Videos", href: "#" },
-  { label: "Events", href: "#" },
-  { label: "News Corner", href: "#" },
-  { label: "Blogs", href: "#" },
-  { label: "FAQs", href: "#" },
-  { label: "Awards", href: "#" },
-  { label: "Careers", href: "#", external: true },
-  { label: "Falcon News", href: "#", external: true },
+  // { label: "Videos", href: "#" },
+  // { label: "Events", href: "#" },
+  // { label: "News Corner", href: "#" },
+  // { label: "Blogs", href: "#" },
+  // { label: "FAQs", href: "#" },
+  // { label: "Awards", href: "#" },
+  // { label: "Careers", href: "#", external: true },
+  // { label: "Become a Channel Partner", href: "#" },
+  // { label: "Falcon News", href: "#", external: true },
 ];
 
 const quickLinks = [
@@ -28,12 +29,12 @@ const quickLinks = [
   { label: "Crisil Rating", href: "#" },
   { label: "Referral", href: "#" },
   { label: "EMI Calculator", href: "#" },
-  { label: "Interior Design", href: "#", external: true },
-  { label: "NRIs", href: "#" },
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms & Conditions", href: "#" },
-  { label: "Disclaimer", href: "#" },
-  { label: "Public Notices", href: "#" },
+  // { label: "Interior Design", href: "#", external: true },
+  // { label: "NRIs", href: "#" },
+  // { label: "Privacy Policy", href: "#" },
+  // { label: "Terms & Conditions", href: "#" },
+  // { label: "Disclaimer", href: "#" },
+  // { label: "Public Notices", href: "#" },
 ];
 
 const investors = [
@@ -55,10 +56,28 @@ const socialLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-footer text-primary-foreground/80 relative overflow-hidden">
-      {/* Background decorative element */}
-      <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-10">
-        <div className="w-full h-full bg-gradient-to-l from-gold/20 to-transparent" />
+    <footer className="bg-black text-primary-foreground/80 relative overflow-hidden">
+      {/* Video Background */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover opacity-30 right-0"
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{objectPosition: 'top-right'}}
+      >
+        <source
+          src="https://d1t2fddy6amcvs.cloudfront.net/images/footer-video-bg.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      {/* Dark overlay for better text readability */}
+      {/* <div className="absolute inset-0 bg-footer/90" /> */}
+
+      {/* Falcon image overlay on the right */}
+      <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-20 pointer-events-none">
+        <div className="w-full h-full bg-gradient-to-l from-gold/10 via-transparent to-transparent blur-2xl" />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 py-16 relative z-10">
@@ -98,7 +117,7 @@ export const Footer = () => {
                 </a>
               </div>
               {/* Social Links */}
-              <div className="flex items-center gap-4 pt-4">
+              <div className="flex items-center gap-3 pt-4">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
@@ -192,6 +211,23 @@ export const Footer = () => {
             Rights Reserved.
           </p>
         </div>
+      </div>
+
+
+      {/* Chatbot Interface - Bottom Right */}
+      <div className="fixed bottom-6 right-6 z-50 flex items-end gap-3">
+        <div className="bg-white rounded-lg shadow-xl p-4 max-w-xs">
+          <p className="text-xs font-semibold text-charcoal mb-1">
+            Prestige Genie says
+          </p>
+          <p className="text-sm text-charcoal/80">Hi! How can we assist you?</p>
+        </div>
+        <button
+          className="w-14 h-14 rounded-full bg-gold hover:bg-gold-dark text-primary-foreground flex items-center justify-center shadow-lg transition-colors duration-300 flex-shrink-0"
+          aria-label="Open chatbot"
+        >
+          <MessageCircle className="w-6 h-6" />
+        </button>
       </div>
     </footer>
   );

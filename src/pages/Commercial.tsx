@@ -103,7 +103,7 @@ const Commercial = () => {
           </motion.h1>
 
           {/* Custom Search Button */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -115,7 +115,7 @@ const Commercial = () => {
             >
               Custom Search
             </Button>
-          </motion.div>
+          </motion.div> */}
 
           {/* Content */}
           <div className="flex flex-col lg:flex-row gap-8">
