@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { EnquireSidebar } from "@/components/EnquireSidebar";
+import { EnquiryFormSidebar } from "@/components/EnquiryFormSidebar";
 import { ProjectCard, Project } from "@/components/ProjectCard";
 import { ProjectSidebar } from "@/components/ProjectSidebar";
-import { Button } from "@/components/ui/button";
 
 import commercial1 from "@/assets/commercial-1.jpg";
 import commercial2 from "@/assets/commercial-2.jpg";
@@ -227,6 +227,10 @@ const projects: Project[] = [
 
 const Commercial = () => {
   const [selectedCountry, setSelectedCountry] = useState("all");
+  const [enquirySidebar, setEnquirySidebar] = useState<{
+    isOpen: boolean;
+    project: Project | null;
+  }>({ isOpen: false, project: null });
 
   const filteredProjects =
     selectedCountry === "all"
@@ -234,6 +238,10 @@ const Commercial = () => {
       : projects.filter((p) =>
           p.location.toLowerCase() === selectedCountry.toLowerCase()
         );
+
+  const handleEnquireClick = (project: Project) => {
+    setEnquirySidebar({ isOpen: true, project });
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -281,7 +289,12 @@ const Commercial = () => {
             <div className="flex-1">
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {filteredProjects.map((project, index) => (
-                  <ProjectCard key={project.id} project={project} index={index} />
+                  <ProjectCard
+                    key={project.id}
+                    project={project}
+                    index={index}
+                    onEnquireClick={handleEnquireClick}
+                  />
                 ))}
               </div>
               {filteredProjects.length === 0 && (
@@ -295,6 +308,12 @@ const Commercial = () => {
       </main>
 
       <Footer />
+
+      <EnquiryFormSidebar
+        isOpen={enquirySidebar.isOpen}
+        onClose={() => setEnquirySidebar({ isOpen: false, project: null })}
+        projectTitle={enquirySidebar.project?.title}
+      />
     </div>
   );
 };
