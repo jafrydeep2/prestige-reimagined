@@ -49,7 +49,6 @@ export const BookVisitSidebar = ({
     countryCode: "+91",
     mobile: "",
     whatsappActivated: false,
-    project: projectTitle || "",
     scheduleDate: "",
     scheduleTime: "",
     newsletter: false,
@@ -70,7 +69,6 @@ export const BookVisitSidebar = ({
       countryCode: "+91",
       mobile: "",
       whatsappActivated: false,
-      project: "",
       scheduleDate: "",
       scheduleTime: "",
       newsletter: false,
@@ -232,11 +230,10 @@ export const BookVisitSidebar = ({
                     Project<span className="text-gold">*</span>
                   </label>
                   <div className="border-b border-border">
-                    <div className="flex items-center justify-between py-2">
-                      <span className={formData.project ? "text-foreground" : "text-muted-foreground"}>
-                        {formData.project || "Select Project"}
+                    <div className="flex items-center justify-between py-2 opacity-60 cursor-not-allowed">
+                      <span className="text-foreground">
+                        {projectTitle || "Select Project"}
                       </span>
-                      <ChevronDown className="w-4 h-4 text-muted-foreground" />
                     </div>
                   </div>
                 </div>
