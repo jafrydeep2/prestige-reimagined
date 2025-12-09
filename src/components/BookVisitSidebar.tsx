@@ -327,7 +327,7 @@ export const BookVisitSidebar = ({
                   variant="outline"
                   className="w-full py-6 border-2 border-gold text-gold hover:bg-gold hover:text-charcoal font-semibold"
                 >
-                  Send OTP
+                  Submit
                 </Button>
               </form>
             </div>
