@@ -41,10 +41,11 @@ const App = () => (
           <Route path="/residential" element={<Residential />} />
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/retail" element={<Retail />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
+          
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -57,7 +57,7 @@ import fr3 from "@/assets/landmark/fr-3.jpg";
 const countries = [
   { name: "India", count: 12 },
   { name: "Oman", count: 10 },
-  { name: "Kuwait", count: 8 },
+  { name: "Kuwait", count: 9 },
   { name: "Qatar", count: 4 },
   { name: "Saudi", count: 3 },
   { name: "Singapore", count: 3 },

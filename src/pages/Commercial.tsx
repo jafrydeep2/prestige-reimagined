@@ -30,7 +30,7 @@ import com15 from "@/assets/commercial/com-15.png";
 import com16 from "@/assets/commercial/com-16.png";
 
 const countries = [
-  { name: "India", count: 7 },
+  { name: "India", count: 8 },
   { name: "Oman", count: 4 },
   { name: "Kuwait", count: 5 },
   { name: "Qatar", count: 2 },
