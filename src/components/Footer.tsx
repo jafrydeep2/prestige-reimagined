@@ -24,10 +24,10 @@ const quickMenu = [
 ];
 
 const legalLinks = [
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms & Conditions", href: "#" },
-  { label: "Disclaimer", href: "#" },
-  { label: "Data Protection", href: "#" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Disclaimer", href: "/disclaimer" },
+  // { label: "Data Protection", href: "#" },
 ];
 
 export const Footer = () => {
@@ -64,25 +64,21 @@ export const Footer = () => {
             <div className="space-y-4 text-sm">
               <div>
                 <p className="font-semibold text-primary-foreground mb-1">
-                  Corporate Address:
+                  Corporate Address
                 </p>
-                <p>Meridian Real Estate & Construction,</p>
-                <p>Corporate Office,</p>
-                <p>India</p>
+                <p>Meridian Real Estate & Construction</p>
+                <p>Brigade Twin Towers, Bengaluru, India</p>
+              </div>
+              <div>
+                <p className="font-semibold text-primary-foreground mb-1">
+                  Regional Offices
+                </p>
+                <p>Muscat, Oman</p>
+                <p>Kuwait City, Kuwait</p>
+                <p>Lusail, Qatar</p>
+                <p>Singapore</p>
               </div>
               {/* <div>
-                <p className="text-primary-foreground/60">For sales enquiries:</p>
-                <p className="font-semibold text-primary-foreground">
-                  Contact Us
-                </p>
-              </div>
-              <div>
-                <p className="text-primary-foreground/60">For other enquiries:</p>
-                <p className="font-semibold text-primary-foreground">
-                  Contact Us
-                </p>
-              </div> */}
-              <div>
                 <p className="text-primary-foreground/60">Email:</p>
                 <a
                   href="mailto:info@meridianrealestate.com"
@@ -90,7 +86,7 @@ export const Footer = () => {
                 >
                   info@meridianrealestate.com
                 </a>
-              </div>
+              </div> */}
               {/* Social Links */}
               {/* <div className="flex items-center gap-3 pt-4">
                 {socialLinks.map((social, index) => (
@@ -144,15 +140,27 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm">
               {legalLinks.map((item) => (
                 <li key={item.label}>
-                  <a
-                    href={item.href}
-                    className="hover:text-gold transition-colors inline-flex items-center gap-1 group"
-                  >
-                    {item.label}
-                    {(item as any).external && (
-                      <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    )}
-                  </a>
+                  {item.href.startsWith("/") ? (
+                    <Link
+                      to={item.href}
+                      className="hover:text-gold transition-colors inline-flex items-center gap-1 group"
+                    >
+                      {item.label}
+                      {(item as any).external && (
+                        <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      )}
+                    </Link>
+                  ) : (
+                    <a
+                      href={item.href}
+                      className="hover:text-gold transition-colors inline-flex items-center gap-1 group"
+                    >
+                      {item.label}
+                      {(item as any).external && (
+                        <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      )}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

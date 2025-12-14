@@ -2,11 +2,11 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import leader1 from "@/assets/team/t1.png";
-import leader2 from "@/assets/team/t2.png";
+import leader2 from "@/assets/team/t22.png";
 
 const leaders = [
   {
-    name: "Mouli Chaudhary",
+    name: "Chandra Mouli Chaudhary",
     title: "Chairman & Executive Director",
     image: leader1,
   },

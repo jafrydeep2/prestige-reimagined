@@ -7,11 +7,43 @@ import { EnquiryFormSidebar } from "@/components/EnquiryFormSidebar";
 import { BookVisitSidebar } from "@/components/BookVisitSidebar";
 import { ProjectCard, Project } from "@/components/ProjectCard";
 import { ProjectSidebar } from "@/components/ProjectSidebar";
-import { Button } from "@/components/ui/button";
 
-import residential1 from "@/assets/residential-1.jpg";
-import residential2 from "@/assets/residential-2.jpg";
-import residential3 from "@/assets/residential-3.jpg";
+
+import res1 from "@/assets/residential/res-1.png";
+import res2 from "@/assets/residential/res-2.png";
+import res3 from "@/assets/residential/res-3.png";
+import res4 from "@/assets/residential/res-4.png";
+import res5 from "@/assets/residential/res-5.png";
+import res6 from "@/assets/residential/res-6.png";
+
+import res7 from "@/assets/residential/res-7.png";
+import res8 from "@/assets/residential/res-8.png";
+import res9 from "@/assets/residential/res-9.png";
+import res10 from "@/assets/residential/res-10.png";
+import res11 from "@/assets/residential/res-11.png";
+import res12 from "@/assets/residential/res-12.png";
+import res13 from "@/assets/residential/res-13.png";
+import res14 from "@/assets/residential/res-14.png";
+import res15 from "@/assets/residential/res-15.png";
+import res16 from "@/assets/residential/res-16.png";
+import res17 from "@/assets/residential/res-17.png";
+import res18 from "@/assets/residential/res-18.png";
+import res19 from "@/assets/residential/res-19.png";
+import res20 from "@/assets/residential/res-20.png";
+import res21 from "@/assets/residential/res-21.png";
+import res22 from "@/assets/residential/res-22.png";
+import res23 from "@/assets/residential/res-23.png";
+import res24 from "@/assets/residential/res-24.png";
+import res25 from "@/assets/residential/res-25.png";
+import res26 from "@/assets/residential/res-26.png";
+import res27 from "@/assets/residential/res-27.png";
+import res28 from "@/assets/residential/res-28.png";
+import res29 from "@/assets/residential/res-29.png";
+import res30 from "@/assets/residential/res-30.png";
+import res31 from "@/assets/residential/res-31.png";
+import res32 from "@/assets/residential/res-32.png";
+
+
 import r1 from "@/assets/landmark/r1.webp";
 import r2 from "@/assets/landmark/r2.webp";
 import r3 from "@/assets/landmark/r3.webp";
@@ -21,12 +53,6 @@ import r6 from "@/assets/landmark/r6.avif";
 import fr1 from "@/assets/landmark/fr-1.jpg";
 import fr2 from "@/assets/landmark/fr-2.jpg";
 import fr3 from "@/assets/landmark/fr-3.jpg";
-import h1 from "@/assets/landmark/h1.webp";
-import h2 from "@/assets/landmark/h2.jpg";
-import h3 from "@/assets/landmark/h3.png";
-import h4 from "@/assets/landmark/h4.png";
-import h5 from "@/assets/landmark/h5.webp";
-import h6 from "@/assets/landmark/h6.jpg";
 
 const countries = [
   { name: "India", count: 12 },
@@ -46,7 +72,7 @@ const projects: Project[] = [
     price: "$348k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: residential1,
+    image: res1,
     projectType: "Apartment",
     bedrooms: "2, 3 & 4 BHK",
     developmentSize: "12.5 acres",
@@ -58,7 +84,7 @@ const projects: Project[] = [
     price: "$225k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: residential2,
+    image: res2,
     projectType: "Apartment",
     bedrooms: "1, 2 & 3 BHK",
     developmentSize: "8.3 acres",
@@ -68,20 +94,20 @@ const projects: Project[] = [
     title: "Meridian Crestview Towers",
     location: "India",
     price: "$450k Onwards",
-    badge: "READY TO MOVE",
-    badgeColor: "green",
-    image: residential3,
+    badge: "NEW LAUNCH",
+    badgeColor: "gold",
+    image: res3,
     projectType: "Apartment",
     bedrooms: "3 & 4 BHK",
     developmentSize: "15.2 acres",
   },
   {
     id: "4",
-    title: "Azure Grove Homes",
+    title: "Meridian Seaview Habitat",
     location: "India",
     price: "$280k Onwards",
-    badge: "NEW LAUNCH",
-    badgeColor: "gold",
+    badge: "READY TO MOVE",
+    badgeColor: "green",
     image: r1,
     projectType: "Villa",
     bedrooms: "3 & 4 BHK",
@@ -89,10 +115,10 @@ const projects: Project[] = [
   },
   {
     id: "5",
-    title: "Meridian Palm Grove",
+    title: "Falcon City",
     location: "India",
     price: "$320k Onwards",
-    badge: "UNDER CONSTRUCTION",
+    badge: "READY TO MOVE",
     badgeColor: "blue",
     image: r2,
     projectType: "Apartment",
@@ -101,11 +127,11 @@ const projects: Project[] = [
   },
   {
     id: "6",
-    title: "Skyline Aurelia",
+    title: "Techno City",
     location: "India",
     price: "$520k Onwards",
-    badge: "NEW LAUNCH",
-    badgeColor: "gold",
+    badge: "READY TO MOVE",
+    badgeColor: "green",
     image: r3,
     projectType: "Apartment",
     bedrooms: "3 & 4 BHK",
@@ -113,7 +139,7 @@ const projects: Project[] = [
   },
   {
     id: "7",
-    title: "Meridian Cityscape Residences",
+    title: "Jindal Techno City",
     location: "India",
     price: "$380k Onwards",
     badge: "READY TO MOVE",
@@ -125,11 +151,11 @@ const projects: Project[] = [
   },
   {
     id: "8",
-    title: "Coralwood Estate",
+    title: "Acropolis Meridian Athenes",
     location: "India",
     price: "$295k Onwards",
-    badge: "NEW LAUNCH",
-    badgeColor: "gold",
+    badge: "READY TO MOVE",
+    badgeColor: "green",
     image: r5,
     projectType: "Villa",
     bedrooms: "3 & 4 BHK",
@@ -137,10 +163,10 @@ const projects: Project[] = [
   },
   {
     id: "9",
-    title: "Meridian Lotus Park",
+    title: "Lakeview Luxe Villas",
     location: "India",
     price: "$410k Onwards",
-    badge: "UNDER CONSTRUCTION",
+    badge: "READY TO MOVE",
     badgeColor: "blue",
     image: r6,
     projectType: "Apartment",
@@ -188,10 +214,10 @@ const projects: Project[] = [
     id: "13",
     title: "Meridian Harmony Homes",
     location: "Oman",
-    price: "$385k Onwards",
+    price: "$900k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: h1,
+    image: res4,
     projectType: "Apartment",
     bedrooms: "2 & 3 BHK",
     developmentSize: "13.2 acres",
@@ -200,10 +226,10 @@ const projects: Project[] = [
     id: "14",
     title: "Ivory Bay Residences",
     location: "Oman",
-    price: "$420k Onwards",
+    price: "$2.5 million Onwards",
     badge: "READY TO MOVE",
     badgeColor: "green",
-    image: h2,
+    image: res5,
     projectType: "Apartment",
     bedrooms: "3 & 4 BHK",
     developmentSize: "17.5 acres",
@@ -212,10 +238,10 @@ const projects: Project[] = [
     id: "15",
     title: "Meridian Greenstone Enclave",
     location: "Oman",
-    price: "$310k Onwards",
+    price: "$3.7 million Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: h3,
+    image: res6,
     projectType: "Villa",
     bedrooms: "3 & 4 BHK",
     developmentSize: "24.1 acres",
@@ -225,9 +251,9 @@ const projects: Project[] = [
     title: "Suncrest Avenue",
     location: "Oman",
     price: "$350k Onwards",
-    badge: "UNDER CONSTRUCTION",
-    badgeColor: "blue",
-    image: h4,
+    badge: "NEW LAUNCH",
+    badgeColor: "gold",
+    image: res7,
     projectType: "Apartment",
     bedrooms: "2 & 3 BHK",
     developmentSize: "10.6 acres",
@@ -239,7 +265,7 @@ const projects: Project[] = [
     price: "$480k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: h5,
+    image: res8,
     projectType: "Apartment",
     bedrooms: "3 & 4 BHK",
     developmentSize: "19.3 acres",
@@ -251,7 +277,7 @@ const projects: Project[] = [
     price: "$290k Onwards",
     badge: "READY TO MOVE",
     badgeColor: "green",
-    image: h6,
+    image: res9,
     projectType: "Apartment",
     bedrooms: "1, 2 & 3 BHK",
     developmentSize: "8.9 acres",
@@ -263,7 +289,7 @@ const projects: Project[] = [
     price: "$395k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: residential1,
+    image: res10,
     projectType: "Villa",
     bedrooms: "3 & 4 BHK",
     developmentSize: "21.8 acres",
@@ -275,7 +301,7 @@ const projects: Project[] = [
     price: "$330k Onwards",
     badge: "UNDER CONSTRUCTION",
     badgeColor: "blue",
-    image: residential2,
+    image: res11,
     projectType: "Apartment",
     bedrooms: "2 & 3 BHK",
     developmentSize: "12.4 acres",
@@ -287,7 +313,7 @@ const projects: Project[] = [
     price: "$460k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: residential3,
+    image: res12,
     projectType: "Apartment",
     bedrooms: "3 & 4 BHK",
     developmentSize: "16.7 acres",
@@ -299,7 +325,7 @@ const projects: Project[] = [
     price: "$270k Onwards",
     badge: "READY TO MOVE",
     badgeColor: "green",
-    image: r1,
+    image: res13,
     projectType: "Apartment",
     bedrooms: "1, 2 & 3 BHK",
     developmentSize: "7.5 acres",
@@ -312,10 +338,23 @@ const projects: Project[] = [
     price: "$510k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: r2,
+    image: res14,
     projectType: "Apartment",
     bedrooms: "3 & 4 BHK",
     developmentSize: "20.2 acres",
+  },
+  // Casagrand Suncity
+  {
+    id: "233",
+    title: "Casagrand Suncity",
+    location: "Kuwait",
+    price: "$340k Onwards",
+    badge: "READY TO MOVE",
+    badgeColor: "green",
+    image: res15,
+    projectType: "Apartment",
+    bedrooms: "2 & 3 BHK",
+    developmentSize: "11.8 acres",
   },
   {
     id: "24",
@@ -324,7 +363,7 @@ const projects: Project[] = [
     price: "$340k Onwards",
     badge: "READY TO MOVE",
     badgeColor: "green",
-    image: r3,
+    image: res16,
     projectType: "Apartment",
     bedrooms: "2 & 3 BHK",
     developmentSize: "11.8 acres",
@@ -336,7 +375,7 @@ const projects: Project[] = [
     price: "$400k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: r4,
+    image: res17,
     projectType: "Villa",
     bedrooms: "3 & 4 BHK",
     developmentSize: "26.5 acres",
@@ -348,7 +387,7 @@ const projects: Project[] = [
     price: "$285k Onwards",
     badge: "UNDER CONSTRUCTION",
     badgeColor: "blue",
-    image: r5,
+    image: res18,
     projectType: "Apartment",
     bedrooms: "1, 2 & 3 BHK",
     developmentSize: "9.1 acres",
@@ -360,7 +399,7 @@ const projects: Project[] = [
     price: "$430k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: r6,
+    image: res19,
     projectType: "Apartment",
     bedrooms: "3 & 4 BHK",
     developmentSize: "18.4 acres",
@@ -372,7 +411,7 @@ const projects: Project[] = [
     price: "$370k Onwards",
     badge: "READY TO MOVE",
     badgeColor: "green",
-    image: fr1,
+    image: res20,
     projectType: "Apartment",
     bedrooms: "2 & 3 BHK",
     developmentSize: "13.7 acres",
@@ -384,7 +423,7 @@ const projects: Project[] = [
     price: "$490k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: fr2,
+    image: res21,
     projectType: "Villa",
     bedrooms: "3 & 4 BHK",
     developmentSize: "23.9 acres",
@@ -396,7 +435,7 @@ const projects: Project[] = [
     price: "$315k Onwards",
     badge: "UNDER CONSTRUCTION",
     badgeColor: "blue",
-    image: fr3,
+    image: res22,
     projectType: "Apartment",
     bedrooms: "2 & 3 BHK",
     developmentSize: "10.3 acres",
@@ -409,7 +448,7 @@ const projects: Project[] = [
     price: "$550k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: h1,
+    image: res23,
     projectType: "Apartment",
     bedrooms: "3 & 4 BHK",
     developmentSize: "22.1 acres",
@@ -421,7 +460,7 @@ const projects: Project[] = [
     price: "$420k Onwards",
     badge: "READY TO MOVE",
     badgeColor: "green",
-    image: h2,
+    image: res24,
     projectType: "Apartment",
     bedrooms: "2 & 3 BHK",
     developmentSize: "14.6 acres",
@@ -433,7 +472,7 @@ const projects: Project[] = [
     price: "$580k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: h3,
+    image: res25,
     projectType: "Villa",
     bedrooms: "3 & 4 BHK",
     developmentSize: "28.3 acres",
@@ -445,7 +484,7 @@ const projects: Project[] = [
     price: "$465k Onwards",
     badge: "UNDER CONSTRUCTION",
     badgeColor: "blue",
-    image: h4,
+    image: res26,
     projectType: "Apartment",
     bedrooms: "3 & 4 BHK",
     developmentSize: "19.8 acres",
@@ -458,7 +497,7 @@ const projects: Project[] = [
     price: "$520k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: h5,
+    image: res27,
     projectType: "Apartment",
     bedrooms: "3 & 4 BHK",
     developmentSize: "21.5 acres",
@@ -470,7 +509,7 @@ const projects: Project[] = [
     price: "$390k Onwards",
     badge: "READY TO MOVE",
     badgeColor: "green",
-    image: h6,
+    image: res28,
     projectType: "Apartment",
     bedrooms: "2 & 3 BHK",
     developmentSize: "15.9 acres",
@@ -482,7 +521,7 @@ const projects: Project[] = [
     price: "$600k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: residential1,
+    image: res29,
     projectType: "Villa",
     bedrooms: "3 & 4 BHK",
     developmentSize: "30.2 acres",
@@ -495,7 +534,7 @@ const projects: Project[] = [
     price: "$850k Onwards",
     badge: "NEW LAUNCH",
     badgeColor: "gold",
-    image: residential2,
+    image: res30,
     projectType: "Apartment",
     bedrooms: "2 & 3 BHK",
     developmentSize: "8.7 acres",
@@ -507,7 +546,7 @@ const projects: Project[] = [
     price: "$920k Onwards",
     badge: "READY TO MOVE",
     badgeColor: "green",
-    image: residential3,
+    image: res31,
     projectType: "Apartment",
     bedrooms: "3 & 4 BHK",
     developmentSize: "12.3 acres",
@@ -519,7 +558,7 @@ const projects: Project[] = [
     price: "$780k Onwards",
     badge: "UNDER CONSTRUCTION",
     badgeColor: "blue",
-    image: r1,
+    image: res32,
     projectType: "Villa",
     bedrooms: "3 & 4 BHK",
     developmentSize: "18.6 acres",
@@ -537,12 +576,26 @@ const Residential = () => {
     project: null,
   });
 
-  const filteredProjects =
+  const getBadgePriority = (badge: string): number => {
+    switch (badge.toUpperCase()) {
+      case "NEW LAUNCH":
+        return 1;
+      case "UNDER CONSTRUCTION":
+        return 2;
+      case "READY TO MOVE":
+        return 3;
+      default:
+        return 4;
+    }
+  };
+
+  const filteredProjects = (
     selectedCountry === "all"
       ? projects
       : projects.filter((p) =>
-          p.location.toLowerCase() === selectedCountry.toLowerCase()
-        );
+        p.location.toLowerCase() === selectedCountry.toLowerCase()
+      )
+  ).sort((a, b) => getBadgePriority(a.badge) - getBadgePriority(b.badge));
 
   const handleEnquireClick = (project: Project) => {
     setEnquirySidebar({ isOpen: true, project });

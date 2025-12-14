@@ -15,24 +15,24 @@ const projects: RetailProject[] = [
   {
     id: "3",
     title: "Sheraton Grand",
-    description: "Hotel & Convention Center at Whitefield",
+    description: "Hotel & Convention Center",
     image: "https://prestigecorporatesite.s3.ap-south-1.amazonaws.com/projectimage/de91e3b0-447f-4279-a0d9-e90fe3f8f138.webp",
   },
   {
     id: "4",
     title: "Bayfront Suites",
-    description: "Spa & Resort in Yelahanka",
+    description: "Spa & Resort",
     image: "https://prestigecorporatesite.s3.ap-south-1.amazonaws.com/projectimage/042e94e1-5982-4266-9000-148d8411988d.webp",
   },
   {
     id: "6",
-    title: "JW Marriott Bengaluru Golfshire",
-    description: "Resort & Spa in Devanahalli",
+    title: "JW Marriott",
+    description: "Resort & Spa",
     image: "https://prestigecorporatesite.s3.ap-south-1.amazonaws.com/projectimage/537a53f8-4a7d-474f-b633-fef4c8261733.webp",
   },
   {
     id: "9",
-    title: "Resort & Spa in Goa",
+    title: "Resort & Spa",
     description: "Luxury Resort & Spa",
     image: "https://prestigecorporatesite.s3.ap-south-1.amazonaws.com/projectimage/c74734e2-a56f-4b4c-a2db-4c1b144e8cfc.webp",
   },
@@ -90,7 +90,7 @@ const Retail = () => {
             transition={{ duration: 0.5 }}
             className="font-display text-3xl lg:text-4xl text-gold mb-10"
           >
-            Retail Projects
+            Retail & Hospitality Projects
           </motion.h1>
 
           {/* Projects Grid */}

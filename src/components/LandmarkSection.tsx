@@ -40,7 +40,7 @@ import h6 from "@/assets/landmark/h6.jpg";
 // First row projects
 const firstRowLandmarks = [
   {
-    title: "The collection at UB City",
+    title: "The collection",
     type: "Mixed development",
     image: fr11,
   },
@@ -84,19 +84,20 @@ const residentialLandmarks = [
     image: r2,
   },
   {
-    title: "Techno City",
-    type: "Large townships",
-    image: r3,
+    title: "Acropolis Meridian Athenes",
+    type: "Residential community",
+    image: r5,
   },
   {
     title: "Jindal Techno City",
     type: "Large townships",
     image: r4,
   },
+  
   {
-    title: "Acropolis Meridian Athenes",
-    type: "Residential community",
-    image: r5,
+    title: "Techno City",
+    type: "Large townships",
+    image: r3,
   },
   {
     title: "Lakeview Luxe Villas",
@@ -410,7 +411,7 @@ export const LandmarkSection = () => {
           >
             <div className="flex items-center gap-4">
               <h2 className="font-display text-2xl lg:text-3xl text-foreground">
-                Hospitality & Retail
+                Hospitality And Retail
               </h2>
               <div className="h-12 w-px bg-gold/40" />
               <p className="text-muted-foreground max-w-xl">

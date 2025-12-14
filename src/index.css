@@ -251,3 +251,17 @@
 .animate-pulse-gold {
   animation: pulse-gold 2s infinite;
 }
+.section-label {
+  color: #856d47;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: block;
+  font-size: 1rem;
+}
+
+.borderLeft {
+  border-left: 1px solid #856d47;
+  padding-left: 3rem;
+  height: fit-content;
+}

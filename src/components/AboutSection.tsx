@@ -6,7 +6,7 @@ const stats = [
   { value: 6500, suffix: "+", label: "Projects Completed" },
   { value: 900, suffix: "+", label: "Million Sq. Ft. Delivered" },
   { value: 240, suffix: "+", label: "Million Sq. Ft. Underway" },
-  { value: 12, suffix: "+", label: "Billion Total Project Value (FY25-26)", prefix: "" },
+  { value: 12, suffix: "+", label: "Billion Total Project Value (FY25-26)", prefix: "$" },
 ];
 
 const CountUp = ({
@@ -77,7 +77,7 @@ export const AboutSection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <div className="space-y-6 text-muted-foreground leading-relaxed" style={{textAlign: 'justify'}}>
               <p>
                 Over the last five decades, Meridian Real Estate & Construction, the flagship realty arm of privately held international business group, has firmly established itself as one of the leading and most respected developers across India, Singapore and the GCC (Qatar, Kuwait, Oman, KSA, UAE, Bahrain).
               </p>
@@ -98,7 +98,7 @@ export const AboutSection = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="grid grid-cols-2 gap-8 lg:gap-12 content-start"
+            className="grid grid-cols-2 gap-8 lg:gap-12 content-start borderLeft"
           >
             {stats.map((stat, index) => (
               <motion.div
