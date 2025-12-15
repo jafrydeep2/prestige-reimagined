@@ -64,7 +64,7 @@ const projects: RetailProject[] = [
   {
     id: "14",
     title: "The Collection",
-    description: "India's first Luxury Shopping Mall",
+    description: "First Luxury Shopping Mall",
     image: "https://prestigecorporatesite.s3.ap-south-1.amazonaws.com/projectimage/0eb35362-ddfc-41f5-b461-2403c5d5c2ec.webp",
   },
   {
@@ -90,7 +90,7 @@ const Retail = () => {
             transition={{ duration: 0.5 }}
             className="font-display text-3xl lg:text-4xl text-gold mb-10"
           >
-            Retail & Hospitality Projects
+            Retail And Hospitality Projects
           </motion.h1>
 
           {/* Projects Grid */}

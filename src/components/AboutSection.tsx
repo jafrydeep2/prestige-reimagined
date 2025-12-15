@@ -44,7 +44,11 @@ const CountUp = ({
 
   return (
     <span ref={ref}>
-      {prefix}
+      {prefix && (
+        <span className={prefix === "$" ? "text-2xl lg:text-4xl" : ""}>
+          {prefix}
+        </span>
+      )}
       {count}
       {suffix}
     </span>
@@ -68,6 +72,22 @@ export const AboutSection = () => {
             About us
           </h2>
           <p className="section-label mb-6">ABOUT MERIDIAN REAL ESTATE & CONSTRUCTION</p>
+          {/* CRISIL Badge */}
+          <div className="flex items-center gap-4">
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold text-[#e31837]">
+                  CRISIL DA
+                </span>
+                <span className="text-xs text-muted-foreground">
+                  An S&P Global Company
+                </span>
+              </div>
+              {/* <div className="h-12 w-px bg-gold/40" />
+              <p className="font-display text-xl lg:text-2xl text-foreground leading-relaxed">
+                Only CRISIL DA1+ rated Real Estate Developer in India
+              </p> */}
+            </div>
+
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
@@ -77,18 +97,19 @@ export const AboutSection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="space-y-6 text-muted-foreground leading-relaxed" style={{textAlign: 'justify'}}>
+            
+            <div className="space-y-6 text-muted-foreground leading-relaxed" style={{ textAlign: 'justify' }}>
               <p>
                 Over the last five decades, Meridian Real Estate & Construction, the flagship realty arm of privately held international business group, has firmly established itself as one of the leading and most respected developers across India, Singapore and the GCC (Qatar, Kuwait, Oman, KSA, UAE, Bahrain).
               </p>
               <p>
-                Founded in the early 1970s by C.V. Narayanan, the Meridian has been driven by a professional leadership team with deep experience in real estate, infrastructure and investments. Over time, the Group has strategically diversified into complementary businesses, each led by seasoned specialists. Its portfolio today in real estate spans interior design & fit-outs, facilities management, engineering services, and property advisory, alongside hospitality and retail ventures. This integrated ecosystem allows Meridian to offer end-to-end solutions, from land acquisition and master planning to construction, interiors and long-term asset management.
+                Founded in the early 1970s by C.V. Karthik Narayanan, the Meridian has been driven by a professional leadership team with deep experience in real estate, infrastructure and investments. Over time, the Group has strategically diversified into complementary businesses, each led by seasoned specialists. Its portfolio today in real estate spans interior design & fit-outs, facilities management, engineering services, and property advisory, alongside hospitality and retail ventures. This integrated ecosystem allows Meridian to offer end-to-end solutions, from land acquisition and master planning to construction, interiors and long-term asset management.
               </p>
               <p>
                 Meridian delivers a balanced mix of residential, commercial, retail, leisure and hospitality developments, including premium housing communities, integrated townships, Grade-A office spaces, destination malls and mixed-use developments.
               </p>
               <p>
-                The Meridian has successfully completed 6,500+ projects spanning a development area of 900+ million sqft and has 167 ongoing projects across segments, with a development area of 240+ million sqft currently under development. Across its portfolio, Meridian oversees a total project value exceeding $12 billion and holds a land bank of over 3500 acres as of July-18. The company has been graded CRISIL DA1+ and enjoys a credit rating of ICRA A+.
+                The Meridian has successfully completed 6,500+ projects spanning a development area of 900+ million sqft and has 167 ongoing projects across segments, with a development area of 240+ million sqft currently under development. Across its portfolio, Meridian oversees a total project value exceeding $12 billion and holds a land bank of over 3500 acres as of July-18. The company has been graded CRISIL DA and enjoys a credit rating of ICRA A+.
               </p>
             </div>
           </motion.div>

@@ -40,9 +40,9 @@ import h6 from "@/assets/landmark/h6.jpg";
 // First row projects
 const firstRowLandmarks = [
   {
-    title: "The collection",
-    type: "Mixed development",
-    image: fr11,
+    title: "Windsor",
+    type: "Luxury apartments",
+    image: fr3,
   },
   {
     title: "ITC Grand",
@@ -65,9 +65,9 @@ const firstRowLandmarks = [
     image: fr2,
   },
   {
-    title: "Windsor",
-    type: "Luxury apartments",
-    image: fr3,
+    title: "The collection",
+    type: "Mixed development",
+    image: fr11,
   },
 ];
 
@@ -268,7 +268,7 @@ export const LandmarkSection = () => {
               </h2>
               <div className="h-12 w-px bg-gold/40" />
               <p className="text-muted-foreground max-w-xl">
-                Shaping the skylines of commercial business districts in major cities of South East Asia and GCC.
+                Shaping the skylines of commercial business districts in major cities of south asia and GCC.
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -342,7 +342,7 @@ export const LandmarkSection = () => {
               </h2>
               <div className="h-12 w-px bg-gold/40" />
               <p className="text-muted-foreground max-w-xl">
-                Shaping the skylines of commercial business districts in major cities of South East Asia and GCC.
+                Shaping the skylines of commercial business districts in major cities of south asia and GCC.
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -415,7 +415,7 @@ export const LandmarkSection = () => {
               </h2>
               <div className="h-12 w-px bg-gold/40" />
               <p className="text-muted-foreground max-w-xl">
-                Shaping the skylines of commercial business districts in major cities of South East Asia and GCC.
+                Shaping the skylines of commercial business districts in major cities of south asia and GCC.
               </p>
             </div>
             <div className="flex items-center gap-3">

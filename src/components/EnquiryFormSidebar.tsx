@@ -15,7 +15,7 @@ interface EnquiryFormSidebarProps {
 
 const countryCodes = [
   { code: "+91", country: "India" },
-  { code: "+880", country: "Bangladesh" },
+  // { code: "+880", country: "Bangladesh" },
   { code: "+1", country: "USA" },
   { code: "+44", country: "UK" },
   { code: "+971", country: "UAE" },

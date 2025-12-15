@@ -78,7 +78,7 @@ export const Footer = () => {
                 <p>Lusail, Qatar</p>
                 <p>Singapore</p>
               </div>
-              {/* <div>
+              <div>
                 <p className="text-primary-foreground/60">Email:</p>
                 <a
                   href="mailto:info@meridianrealestate.com"
@@ -86,7 +86,7 @@ export const Footer = () => {
                 >
                   info@meridianrealestate.com
                 </a>
-              </div> */}
+              </div>
               {/* Social Links */}
               {/* <div className="flex items-center gap-3 pt-4">
                 {socialLinks.map((social, index) => (

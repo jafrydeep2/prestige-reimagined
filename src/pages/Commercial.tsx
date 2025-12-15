@@ -40,6 +40,15 @@ const countries = [
 const projects: Project[] = [
   // India - 7 projects
   {
+    id: "8",
+    title: "Skyline Business Plaza",
+    location: "Oman",
+    badge: "UNDER CONSTRUCTION",
+    badgeColor: "blue",
+    image: com5,
+    developmentSize: "10.6 Acres",
+  },
+  {
     id: "1",
     title: "Meridian Business Square",
     location: "India",
@@ -85,6 +94,15 @@ const projects: Project[] = [
     developmentSize: "12.3 Acres",
   },
   {
+    id: "16",
+    title: "Vertex Business Bay",
+    location: "Kuwait",
+    badge: "UNDER CONSTRUCTION",
+    badgeColor: "blue",
+    image: com13,
+    developmentSize: "7.6 Acres",
+  },
+  {
     id: "6",
     title: "Axis Tower One",
     location: "India",
@@ -103,15 +121,7 @@ const projects: Project[] = [
     developmentSize: "8.9 Acres",
   },
   // Oman - 4 projects
-  {
-    id: "8",
-    title: "Skyline Business Plaza",
-    location: "Oman",
-    badge: "UNDER CONSTRUCTION",
-    badgeColor: "blue",
-    image: com5,
-    developmentSize: "10.6 Acres",
-  },
+  
   {
     id: "9",
     title: "Meridian TechVista",
@@ -176,15 +186,7 @@ const projects: Project[] = [
     image: com12,
     developmentSize: "8.1 Acres",
   },
-  {
-    id: "16",
-    title: "Vertex Business Bay",
-    location: "Kuwait",
-    badge: "UNDER CONSTRUCTION",
-    badgeColor: "blue",
-    image: com13,
-    developmentSize: "7.6 Acres",
-  },
+  
   // Qatar - 2 projects
   {
     id: "17",

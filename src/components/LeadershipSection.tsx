@@ -6,12 +6,12 @@ import leader2 from "@/assets/team/t22.png";
 
 const leaders = [
   {
-    name: "Chandra Mouli Chaudhary",
+    name: "Chandramouli Choudhary",
     title: "Chairman & Executive Director",
     image: leader1,
   },
   {
-    name: "Abhishek Chaudhary",
+    name: "Abhishek Chandramouli Chaudhary",
     title: "Non Executive Director",
     image: leader2,
   },
@@ -70,11 +70,11 @@ export const LeadershipSection = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   {/* Hover overlay with arrow */}
-                  <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all duration-300 flex items-center justify-center">
+                  {/* <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-all duration-300 flex items-center justify-center">
                     <div className="w-12 h-12 rounded-full bg-background/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <ArrowUpRight className="w-5 h-5 text-foreground" />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <h3 className="font-display text-lg lg:text-xl text-gold mb-1">
                   {leader.name}
